@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(225, 209, 209);
+    place-items: center;
+    display: flex;
+    height: 100vh;
+    
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "a a b"
+    "c d d"
+    "c e e"
+    ;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+    
+}
+main div{
+    padding: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+.one{
+    background-color: rgb(135, 39, 39);
+    grid-area: a;
+
+}
+.two{
+    background-color: rgb(159, 159, 9);
+    grid-area: b;
+    
+}
+.three{
+    background-color: green;
+    grid-area: c;
+}
+.four{
+    background-color: rgb(47, 47, 233);
+    grid-area: d;
+}
+.five{
+    background-color:  rgb(47, 47, 233);
+    grid-area: e;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    background-color:   hsl(31, 77%, 52%);
+    color: white;
+}
+.item{
+    padding: 10px;
+}
